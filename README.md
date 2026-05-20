@@ -46,7 +46,7 @@ SoybeanAdmin Rust 是一个基于 Rust 语言开发的现代化后台管理系�
 >
 > - **枚举修改**：`frontend/src/typings/api.d.ts` 中将 `type EnableStatus = 'ENABLED' | 'DISABLED';` 改为 `type EnableStatus = 'enabled' | 'disable';`
 >
-> - **枚举记录**：同文件中将 `ENABLED/DISABLED` 改为 `enabled/disabled`，如：
+> - **枚举记录**：`frontend/src/constants/business.ts` 文件中将 `ENABLED/DISABLED` 改为 `enabled/disabled`，如：
 >
 >   ```ts
 >   export const enableStatusRecord: Record<Api.Common.EnableStatus, App.I18n.I18nKey> = {
